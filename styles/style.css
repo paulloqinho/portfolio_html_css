@@ -241,7 +241,7 @@ span {
 
 /* RESPONSIVO PARA TELAS DE TABLET */
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
     .imagem__cabecalho__paulologo{
         width: 150px;
     }
