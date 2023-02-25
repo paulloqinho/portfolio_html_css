@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* RESET MARGIN E PADDING CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* VARIAVEIS CSS */
+:root{ 
+    --cor_primeiro: #ff0000;
+    --cor_segundo: #000000;
+    --cor_terceiro: #ffffff;
+    --cor_quarto:#1C1C1C;
+    --cor_quinto:#272727;
+
+    --fonte_primeiro:'Krona One', sans-serif;
+    --fonte_segundo:'Montserrat', sans-serif;
+}
+
+/* CSS INDEX */
+body{
+    box-sizing: border-box;
+    background-color:var(--cor_quarto);
+}
+header{
+    background-color:var(--cor_segundo);
+}
+.imagem__cabecalho__paulologo {
+    width: 25%;
+}
+.cabecalho{
+    padding: 2% 14%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.cabecalho__menu{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+  }
+.cabecalho__link{
+    display: inline-block;
+    font-family:var(--fonte_segundo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor_terceiro);
+    text-decoration: none;
+}
+.cabecalho__link:hover{
+    color: var(--cor_primeiro);
+}
+.apresentacao{
+    padding: 5% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor_terceiro);
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: var(--fonte_primeiro);
+}
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    margin: 20px 20px 40px 0;
+    font-family: var(--fonte_segundo);
+}
+.conteudo__skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo__skills{
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-family: var(--fonte_primeiro);
+    font-weight: 400;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.logo__skills{
+    width: 50px;
+}
+.logo__skills:hover{
+    opacity: 45%;
+}
+.apresentacao__links{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+span {
+    color: var(--cor_primeiro);
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte_primeiro);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+.apresentacao__links__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border: 2px solid var(--cor_primeiro);
+    color:var(--cor_terceiro);
+    font-size: 0.90rem;
+    font-weight: bold;
+    font-family: var(--fonte_segundo);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor_quinto);
+}   
+.imagem-paulo{ 
+    width: 70%;
+    border-radius: 50px;
+    box-shadow: 10px -5px 11px 0 var(--cor_segundo), 10px -5px 0 5px var(--cor_primeiro);
+}
+.imagem__paulologo{
+    width: 8%;
+}
+.footer__index{
+    text-align: center;
+    font-family: var(--fonte_segundo);
+    background-color: var(--cor_segundo);
+    color: var(--cor_terceiro);
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    font-size: 0.90rem;
+    
+}
+.imagem__twitch, .imagem__github, .imagem__instagram,.imagem__linkedin{
+    width: 30px;
+}
+
+/* CSS DO ABOUT */
+
+.apresentacao__about{
+    padding: 8% 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor_terceiro);
+}
+.apresentacao__conteudo__titulo__about{
+    font-size: 2.18rem;
+    font-family: var(--fonte_primeiro);
+}
+.apresentacao__conteudo__paragrafo__about{
+    font-size: 1rem;
+    margin: 20px 20px 40px 0;
+    font-family: var(--fonte_segundo);
+}
+.imagem-paulo__about{ 
+    margin: 0 0 10% 0;
+    width: 30%;
+    border-radius: 3.125rem;
+    box-shadow: 10px -5px 11px 0 var(--cor_segundo), 10px -5px 0 5px var(--cor_primeiro);
+}
+.footer__about{
+    text-align: center;
+    font-family: var(--fonte_segundo);
+    background-color: var(--cor_segundo);
+    color: var(--cor_terceiro);
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 60px;
+    font-size: 0.90rem;
+    
+}
+
+
+/* CSS RESPONSIVO PARA TELAS DE CELULARES */
+
+@media (max-width: 600px){
+    .imagem__cabecalho__paulologo{
+        width: 150px;
+    }
+    .imagem-paulo{
+        width: 65%;
+    }
+    .cabecalho{
+        padding: 5%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 15%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .imagem-paulo__about{
+        width: 65%;
+    }
+    .apresentacao__about{
+        flex-direction: column-reverse;
+    }
+    .imagem__paulologo{
+        width: 150px;
+    }
+}
+
+/* RESPONSIVO PARA TELAS DE TABLET */
+
+@media (max-width: 768px){
+    .imagem__cabecalho__paulologo{
+        width: 150px;
+    }
+    .imagem-paulo{
+        width: 65%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 15%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .imagem-paulo__about{
+        width: 65%;
+    }
+    .apresentacao__about{
+        flex-direction: column-reverse;
+    }
+    .imagem__paulologo{
+        width: 150px;
+    }
+    
+
+}
